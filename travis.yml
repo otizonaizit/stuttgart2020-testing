@@ -1,6 +1,12 @@
+# docs: https://docs.travis-ci.com/user/languages/python/
 language: python
 python:
-  - "3.6"
+  - "3.6" # default
+  - "3.8"
+
+install:
+  - pip install -e .
+
 script:
   - pytest
 
