@@ -59,6 +59,12 @@
       - generate data from the model with known parameters and recover the parameters
 
 ## the problem with random numbers in the tests
+  - how do we make sure tests failures are reproducible if we use random data?
+  - different approaches, with different level of complexity:
+      - test cases: [`test_randomness.py`](test_randomness.py)
+      - use `pytest` fixtures: [`conftest_minimal.py`](conftest_minimal.py)
+      - add argument to `pytest` CLI and use test setup hooks in `pytest`: [`conftest.py`](conftest.py)
+
 
 ## Continuous integration
 We will use Travis CI (but there are many others). Note that it's for free only for **public** repositories:
