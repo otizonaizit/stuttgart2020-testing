@@ -73,5 +73,6 @@ We will use Travis CI (but there are many others). Note that it's for free only 
 - authorize Travis CI to have access to the repos
 - put a `.travis.yml` file in the repo
 - now your PR will automatically trigger a travis CI build
+- if the author of a PR does not have an account on Travis, the PR may not trigger a travis CI build (they are flagged as "abuse" on Travis).
 - you can manually trigger a build if you go to the travis repo page: https://travis-ci.com/USERNAME/REPONAME/ under `More options...`
 
