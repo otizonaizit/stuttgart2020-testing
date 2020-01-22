@@ -28,7 +28,9 @@
   - side effect: better code
 
 ## testing scientific code
-  - floating point equality (`1.1+2.2 != 3.3`)): [`np.isclose`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.isclose.html), [`np.allclose`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.allclose.html)
+  - floating point equality (`1.1+2.2 != 3.3`))
+  - `x=1.1; print(f'x:.16f')`
+  - [`np.isclose`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.isclose.html), [`np.allclose`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.allclose.html)
   - issues with numpy arrays:
 
       ```python
